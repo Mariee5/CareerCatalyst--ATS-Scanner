@@ -14,14 +14,14 @@ An ATS-focused resume analyzer combining a React frontend and a lightweight Pyth
 
 ## Quick Start
 ### Frontend
-`ash
+`bash
 cd CareerCatalyst2/CareerCatalyst
 npm install
 npm start
 `
 
 ### Backend
-`ash
+`bash
 cd CareerCatalyst2/CareerCatalyst/backend
 pip install -r requirements.txt
 python app.py
@@ -30,16 +30,16 @@ python app.py
 ## Screenshots
 > Images are stored within the app and referenced directly.
 
-![Front Page](CareerCatalyst2/CareerCatalyst/src/assets/frontpage.png)
+![ATS View](screenshots/ATS1.png)
 
-![Interview View](CareerCatalyst2/CareerCatalyst/src/assets/Interview.png)
+![Resume Analysis](screenshots/atsres1.png)
 
-![Hiring Animation](CareerCatalyst2/CareerCatalyst/src/assets/Hiring.gif)
+![UI Screenshot](screenshots/Screenshot%202025-08-26%20080459.png)
 
 ## How It Was Built
 - UI built with React (components in src/components) and pages under src/pages.
-- Styling through CSS/Tailwind configuration (see 	ailwind.config.js, src/styles/App.css).
-- Backend built with Python (Flask-style app in ackend/app.py), ATS logic in ackend/ats_analyzer.py.
+- Styling through CSS/Tailwind configuration (see 	tailwind.config.js, src/styles/App.css).
+- Backend built with Python (Flask-style app in 	backend/app.py), ATS logic in 	backend/ats_analyzer.py.
 - Development scripts: start_frontend.bat, start_backend.bat, and start_app.ps1.
 
 ## Notes
