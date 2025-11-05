@@ -1,0 +1,27 @@
+﻿# Exclusions requested
+CareerCatalystash/
+
+# Node / frontend
+node_modules/
+**/node_modules/
+dist/
+build/
+.cache/
+.DS_Store
+
+# Python / backend
+venv/
+**/venv/
+__pycache__/
+*.pyc
+instance/*.db
+
+# Environment / OS
+.env
+.env.*
+*.log
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
