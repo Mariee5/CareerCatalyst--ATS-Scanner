@@ -1,0 +1,71 @@
+.connect-section {
+  background-color: #f0f5f1;
+  padding: 5rem 2rem;
+  color: #2c2c2c;
+}
+
+.connect-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.connect-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.connect-text h2 {
+  font-size: 2.2rem;
+  color: #354d36;
+  margin-bottom: 1rem;
+}
+
+.connect-text p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.connect-details h4 {
+  color: #3e5941;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.connect-details p {
+  margin-bottom: 1.5rem;
+  font-size: 0.98rem;
+  color: #555;
+}
+
+.connect-btn {
+  background-color: #4a6743;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-btn:hover {
+  background-color: #3d5236;
+}
+
+.connect-graphic {
+  flex: 1;
+  text-align: center;
+}
+
+.connect-graphic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}

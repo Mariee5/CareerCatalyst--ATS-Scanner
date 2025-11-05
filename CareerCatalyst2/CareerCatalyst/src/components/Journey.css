@@ -1,0 +1,179 @@
+.journey-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 6rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.journey-heading {
+  text-align: center;
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.journey-step {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5rem;
+  gap: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.journey-step.left {
+  flex-direction: row;
+}
+
+.journey-step.right {
+  flex-direction: row-reverse;
+}
+
+.journey-step img {
+  width: 100%;
+  max-width: 400px;
+  flex: 1;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.journey-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.journey-text h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1rem;
+  color: #1f2937;
+  font-weight: 600;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.journey-text p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.journey-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.journey-text ul li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+}
+
+.journey-text ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .journey-section {
+    padding: 4rem 1rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+  }
+  
+  .journey-step {
+    padding: 1.5rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .journey-text {
+    min-width: 100%;
+  }
+  
+  .btn.green, .btn.black {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.btn.primary:hover, .btn.primary:focus {
+  background: linear-gradient(135deg, #047857 0%, #059669 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 12px 30px rgba(5, 150, 105, 0.4);
+  transform: translateY(-2px) scale(1.02);
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+.btn.green {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+}
+
+.btn.green:hover, .btn.green:focus {
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  color: white;
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.btn.black {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn.black:hover, .btn.black:focus {
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px) scale(1.02);
+}

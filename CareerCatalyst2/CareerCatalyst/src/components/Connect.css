@@ -1,0 +1,56 @@
+.connect-section {
+  background-color: #f3f6f1;
+  padding: 4rem 1.5rem;
+}
+
+.connect-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.connect-heading {
+  font-size: 2.4rem;
+  color: #3a3a3a;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.connect-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.connect-card {
+  background-color: #e9f0e4;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid #6b8d6e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.connect-card:hover {
+  transform: translateY(-4px);
+}
+
+.connect-card h3 {
+  font-size: 1.3rem;
+  color: #4a5c48;
+  margin-bottom: 1rem;
+}
+
+.connect-card p {
+  font-size: 1rem;
+  color: #333;
+}

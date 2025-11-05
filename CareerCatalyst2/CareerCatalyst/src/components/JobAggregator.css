@@ -1,0 +1,113 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.job-card {
+  will-change: transform, box-shadow, opacity;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.job-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(74, 124, 89, 0.15);
+  background-color: #f8fdf8 !important;
+}
+
+.job-card.visited {
+  border-left: 4px solid #2d5a3d;
+  opacity: 0.85;
+}
+
+/* Filter dropdown styling */
+.MuiFormControl-root .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(74, 124, 89, 0.2);
+}
+
+.MuiFormControl-root .MuiOutlinedInput-root:hover {
+  border-color: rgba(74, 124, 89, 0.4);
+}
+
+.MuiFormControl-root .MuiOutlinedInput-root.Mui-focused {
+  border-color: #4a7c59;
+  box-shadow: 0 0 0 2px rgba(74, 124, 89, 0.1);
+}
+
+/* Search button styling */
+.MuiButton-contained {
+  background: linear-gradient(135deg, #4a7c59 0%, #3d6b4a 100%) !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  box-shadow: 0 4px 12px rgba(74, 124, 89, 0.2) !important;
+  transition: all 0.2s ease !important;
+}
+
+.MuiButton-contained:hover {
+  background: linear-gradient(135deg, #3d6b4a 0%, #2d5a3d 100%) !important;
+  box-shadow: 0 6px 16px rgba(74, 124, 89, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+/* Loading spinner */
+.MuiCircularProgress-root {
+  color: #4a7c59 !important;
+}
+
+.jobagg-bg {
+  background: radial-gradient(ellipse at 60% 0%, #e0f7fa 0%, #f8faf8 40%, #ffe4ec 100%),
+    radial-gradient(circle at 20% 80%, #e0ffe8 0%, transparent 70%),
+    radial-gradient(circle at 90% 70%, #e0e7ff 0%, transparent 70%);
+  min-height: 100vh;
+  border-radius: 32px;
+  box-shadow: 0 8px 40px 0 rgba(74, 124, 89, 0.08);
+  overflow: visible;
+  position: relative;
+}
+
+.jobagg-blur-circles {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.jobagg-blur-circles .circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(32px);
+  opacity: 0.5;
+}
+
+.jobagg-blur-circles .mint {
+  width: 180px; height: 180px;
+  background: #b2f7cc;
+  top: 40px; left: 40px;
+}
+.jobagg-blur-circles .blue {
+  width: 140px; height: 140px;
+  background: #b2e0ff;
+  top: 220px; right: 80px;
+}
+.jobagg-blur-circles .pink {
+  width: 120px; height: 120px;
+  background: #ffd6e0;
+  bottom: 60px; left: 120px;
+}
+
+/* Card spacing for depth */
+.jobagg-bg > .MuiBox-root[style*='bgcolor: white'] {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+  box-shadow: 0 8px 32px 0 rgba(74, 124, 89, 0.12);
+  border-radius: 24px !important;
+} 

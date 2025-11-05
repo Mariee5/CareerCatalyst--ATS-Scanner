@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+spacy
+scikit-learn
+requests
+python-docx
+pdfplumber 
+google-generativeai
+flask
+flask-cors
+python-dotenv 
